@@ -1,0 +1,466 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* Header Externo */
+
+#contenedorExterno{
+	font-family: Arial;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#contenedorExterno header{
+	background-color: rgb(232,232,232);
+	width: 100%;
+}
+
+#contenedorExterno h1{
+	padding-top: 10px;
+	color: rgb(79,79,79);
+	text-align: center;
+}
+
+#contenedorExterno h5{
+	padding-bottom: 20px;
+	color: gray;
+	text-align: center;
+}
+
+
+/* Menu superior */
+
+#contenedorExterno header nav{
+	margin: auto;
+	display: table;
+	background-color: rgb(24, 24, 24);
+	width: 60%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	font-size: 90%;
+}
+
+#contenedorExterno header nav ul{
+	text-align: center;
+	list-style: none;
+}
+
+#contenedorExterno header nav li{
+	display: inline-block;
+	padding: 0px 15px;
+}
+
+#contenedorExterno header nav #verde{
+	color: white;
+	background-color: green;
+}
+
+#contenedorExterno header nav a{
+	color: darkgray;
+	background-color: rgb(24, 24, 24);
+	text-decoration: none;
+	display: inline-block;
+	padding: 20px 10px;
+	transition: all 400ms;
+}
+
+#contenedorExterno header nav a:hover{
+	color: white;
+	background-color: green;
+}
+
+/* Contenedor Interno */
+
+#contenedorInterno{
+	margin: auto;
+	width: 60%;
+	background-color: white;
+}
+
+
+/* Imagen superior grande */
+
+#contenedorInterno img{
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+/* Section con los 4 articles */
+/* Cada article debe tener un header, div y footer */
+
+#contenedorInterno section article{
+	display: inline-block;
+	background-color: rgb(51, 51, 51);
+	overflow: hidden;
+	width: 22%;
+	margin-top: 30px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+#contenedorInterno section{
+	display: flex;
+  	justify-content: space-between;
+  	border-bottom: 1px solid lightgray;
+}
+
+#contenedorInterno section article header{
+	background-color: rgb(24, 24, 24);
+	color: white;
+	padding:  20px;
+}
+
+#contenedorInterno section article div{
+	font-size: 75%;
+	padding: 15px;
+	line-height: 19px;
+	padding-top: 25px;
+}
+
+#contenedorInterno section article div .superior{
+	color: rgb(112, 112, 112);
+}
+
+#contenedorInterno section article div .inferior{
+	color: rgb(90, 90, 90);
+}
+
+#contenedorInterno section article footer{
+	font-size: 75%;
+	color: white;
+	padding: 10px;
+}
+
+
+/* Zona inferior, hay 3 aside, 
+2 a la izquierda y uno a la derecha, 
+en el centro un section */
+
+/* Zona Inferior */
+
+#zonaCambios{
+	display: flex;
+	width: 60%;
+	margin: auto;
+	align-content: center;
+}
+ 
+
+/* SideBar 2 + Nulla eleifend*/
+
+.titulozonaCambios{
+	color: gray;
+}
+
+.titulozonaCambios h2{
+	font-size: 125%;
+	color: black;
+	font-weight: normal;
+}
+
+.titulozonaCambios ul{
+	list-style-position: inside;
+	padding-bottom: 30px;
+	padding-top: 10px;
+}
+
+.titulozonaCambios li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 75%;
+}
+
+.lilineas{
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+}
+
+.lipenultima{
+	border-bottom: 1px solid lightgray;
+}
+
+#zonaIzquierda{
+	margin-right: 4%;
+	width: 22%;
+	margin-top: 36px;
+}
+
+
+/* Zona central con la imagen, compuesta de titulo, 
+img, p y el boton verde es un div */
+
+#zonaCentral{
+	margin-top: 40px;
+	width: 48%;
+}
+
+#zonaCentral img{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#zonaCentral h2{
+	font-weight: normal;
+}
+
+#zonaCentral p{
+	font-size: 75%;
+	line-height: 20px;
+	color: gray;
+}
+
+#botonVerde{
+	background-color: green;
+	border-radius: 5px;
+	margin-top: 15px;
+	width: 100px;
+	text-align: center;
+	padding: 8px;
+}
+
+#botonVerde a{
+	font-size: 12px;
+	text-decoration: none;
+	color: white;
+}
+
+
+/* Zona derecha con el sidebar 1 */
+
+.sidebar1{
+	list-style-position: inside;
+	width: 22%;
+	margin-left: 4%;
+	margin-top: 36px;
+}
+
+.sidebar1 h2{
+	font-size: 125%;
+	color: black;
+	font-weight: normal;
+}
+
+#zonaDerecha{
+	font-size: 75%;
+	line-height: 20px;
+	color: gray;
+	padding-top: 6px;
+}
+
+#zonaDerecha .octubre{
+	font-weight: bolder;
+	color: black;
+	margin-bottom: 5px;
+}
+
+.text{
+	font-style: italic;
+}
+
+#zonaDerecha div{
+	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+#zonaDerecha .lineaInferior{
+	border-bottom: 1px solid lightgray;
+}
+
+
+/* Footer Externo, contiene un section con 4 articles 
+y un footer */
+
+#contenedorExterno > footer{
+	background-color: rgb(232,232,232);
+	margin-top: 30px;
+	width: 100%;
+}
+
+
+/* Section con los 4 articles */
+
+#contenedorExterno > footer section{
+	display: flex;
+  	justify-content: space-between;
+	margin: auto;
+	width: 60%;
+	border-bottom: 1px solid lightgray;
+	padding-top: 30px;
+}
+
+#contenedorExterno > footer section article h3{
+	color: #383838;
+	padding-bottom: 20px;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+#contenedorExterno > footer section article p{
+	font-size: 75%;
+	color: gray;
+	width: 100%;
+}
+
+/*Article 1*/
+
+#art1{
+	width: 23%;
+	font-size: 90%;
+	padding-bottom: 20px;
+}
+
+#art1 img{
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+#art1 p{
+	line-height: 15px;
+}
+
+/*Article 2*/
+
+#art2{
+	width: 20%;
+	font-size: 70%;
+	padding-bottom: 20px;
+}
+
+#art2 h4{
+	padding-top: 3px;
+	font-weight: normal;
+}
+
+#art2 p{
+	padding-top: 10px;
+}
+
+#top{
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 20px;
+}
+
+#mid{
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+#bot{
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+/*Article 3*/
+
+#art3{
+	width: 23%;
+	font-size: 70%;
+	line-height: 15px;
+	padding-bottom: 20px;
+}
+
+#ptop{
+	padding-bottom: 20px;
+	font-weight: normal;
+}
+
+#pmid{
+	padding-bottom: 20px;
+	color: gray;
+	font-weight: normal;
+}
+
+#pbot{
+	color: gray;
+	font-weight: normal;
+}
+
+/*Article 4*/
+
+#art4{
+	font-size: 70%;
+	padding-bottom: 20px;
+}
+
+#art4 h4{
+	padding-bottom: 20px;
+	line-height: 17px;
+	color: gray;
+	font-weight: normal;
+}
+
+#art4 div{
+	display: inline-block;
+	color: black;
+}
+
+/* Footer */
+
+#contenedorExterno > footer footer{
+	width: 60%;
+	margin: auto;
+	font-size: 10px;
+	display: flex;
+  	justify-content: center;
+  	margin-top: 15px;
+  	padding-bottom: 60px;
+}
+
+#contenedorExterno > footer footer p{
+	color: gray;
+}
+
+#contenedorExterno > footer footer div{
+	text-decoration: underline;
+	padding-left: 5px;
+	padding-right: 3px;
+}
+
+/* Diferentes paginas */
+
+/* Two Columns #1 Y Two Columns #2 */
+
+#zonaCambios2Columns1{
+	display: flex;
+	width: 60%;
+	margin: auto;
+	align-content: center;
+}
+
+#zonaCambios2Columns1 > #zonaCentral{
+	margin-top: 40px;
+	width: 75%;
+}
+
+#zonaCambios2Columns1 > .sidebar1 h2{
+	font-size: 120%;
+}
+
+/* One Column */
+
+#zonaCentral1Column{
+	margin-top: 40px;
+	width: 100%;
+}
+
+#zonaCentral1Column h2{
+	font-weight: normal;
+}
+
+#zonaCentral1Column p{
+	font-size: 75%;
+	line-height: 20px;
+	color: gray;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
